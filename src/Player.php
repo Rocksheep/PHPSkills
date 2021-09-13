@@ -57,10 +57,6 @@ class Player implements ISupportPartialPlay, ISupportPartialUpdate
 
     public function __toString()
     {
-        if ($this->_Id != null) {
-            return (string)$this->_Id;
-        }
-
-        return parent::__toString();
+        return (string) $this->_Id;
     }
 }
